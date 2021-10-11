@@ -15,8 +15,7 @@
     <name>sso-client</name>
     <description>sso-server provider sso service.</description>
 
-    <properties>
-    </properties>
+    <properties></properties>
 
     <dependencies>
         <dependency>
@@ -46,7 +45,6 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
 
     <build>
         <plugins>
