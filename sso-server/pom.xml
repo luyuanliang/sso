@@ -50,7 +50,11 @@
                 <artifactId>lombok</artifactId>
                 <scope>provided</scope>
             </dependency>
-
+            <dependency>
+                <groupId>org.web.base</groupId>
+                <artifactId>helper</artifactId>
+                <scope>compile</scope>
+            </dependency>
         </dependencies>
 
     </dependencyManagement>

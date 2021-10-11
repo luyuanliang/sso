@@ -10,43 +10,32 @@
     <groupId>org.web.base.common</groupId>
     <artifactId>sso</artifactId>
     <version>1.0.0</version>
-	<packaging>pom</packaging>
+    <packaging>pom</packaging>
     <name>sso</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
     </properties>
-	
+
     <modules>
         <module>sso-server</module>
         <module>sso-client</module>
     </modules>
-	
-	
-    <dependencies>
-        <dependency>
-            <groupId>org.web.base</groupId>
-            <artifactId>base-model</artifactId>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.web</groupId>
-            <artifactId>helper</artifactId>
-        </dependency>
-    </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+
+        </dependencies>
+    </dependencyManagement>
 
     <build>
         <plugins>
             <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <excludes>
-                        <exclude>
-                            <groupId>org.projectlombok</groupId>
-                            <artifactId>lombok</artifactId>
-                        </exclude>
-                    </excludes>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
                 </configuration>
             </plugin>
         </plugins>
