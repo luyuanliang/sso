@@ -16,16 +16,14 @@
     <name>sso-client</name>
     <description>sso-server provider sso service.</description>
 
-    <properties></properties>
-
     <dependencies>
         <dependency>
             <groupId>org.web.base</groupId>
             <artifactId>basedomain</artifactId>
         </dependency>
         <dependency>
-            <groupId>commons-lang</groupId>
-            <artifactId>commons-lang</artifactId>
+            <groupId>commons-beanutils</groupId>
+            <artifactId>commons-beanutils</artifactId>
         </dependency>
         <dependency>
             <groupId>com.google.code.gson</groupId>

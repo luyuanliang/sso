@@ -21,4 +21,5 @@ public class DefaultSSOFilter extends SSOAbstractFilter {
     ResultDO<SessionAccountDO> getSessionByToken(String token, HttpServletRequest request) {
         return null;
     }
+
 }
