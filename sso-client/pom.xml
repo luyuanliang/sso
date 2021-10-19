@@ -18,10 +18,6 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.web.base</groupId>
-            <artifactId>basedomain</artifactId>
-        </dependency>
-        <dependency>
             <groupId>commons-beanutils</groupId>
             <artifactId>commons-beanutils</artifactId>
         </dependency>
@@ -48,8 +44,12 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.web</groupId>
+            <groupId>org.web.base</groupId>
             <artifactId>helper</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.web.base</groupId>
+            <artifactId>basedomain</artifactId>
         </dependency>
     </dependencies>
 

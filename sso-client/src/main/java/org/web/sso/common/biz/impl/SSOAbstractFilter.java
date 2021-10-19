@@ -6,10 +6,10 @@ import lombok.Setter;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.web.domain.ResultDO;
-import org.web.helper.HttpRequestHelper;
-import org.web.helper.PropertiesHelper;
-import org.web.helper.StringHelper;
+import org.web.base.domain.ResultDO;
+import org.web.base.helper.HttpRequestHelper;
+import org.web.base.helper.PropertiesHelper;
+import org.web.base.helper.StringHelper;
 import org.web.sso.common.domain.SessionAccountDO;
 
 import javax.servlet.*;

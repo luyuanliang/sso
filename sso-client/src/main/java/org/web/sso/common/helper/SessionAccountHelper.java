@@ -1,7 +1,7 @@
 package org.web.sso.common.helper;
 
 import io.micrometer.core.instrument.util.StringUtils;
-import org.web.helper.HttpRequestHelper;
+import org.web.base.helper.HttpRequestHelper;
 import org.web.sso.common.biz.impl.ConstantInterface;
 import org.web.sso.common.domain.SessionAccountDO;
 

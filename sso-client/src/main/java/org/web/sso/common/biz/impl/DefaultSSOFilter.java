@@ -2,7 +2,7 @@ package org.web.sso.common.biz.impl;
 
 import lombok.Getter;
 import lombok.Setter;
-import org.web.domain.ResultDO;
+import org.web.base.domain.ResultDO;
 import org.web.sso.common.domain.SessionAccountDO;
 
 import javax.servlet.http.HttpServletRequest;
