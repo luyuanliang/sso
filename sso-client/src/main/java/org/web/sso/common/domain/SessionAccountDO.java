@@ -7,6 +7,7 @@ import lombok.Setter;
 @Getter
 public class SessionAccountDO {
 
+    private String ssoToken;
     private String accountNum;
     private String accountName;
 }
