@@ -2,6 +2,7 @@ package org.web.sso.common.server.query;
 
 import java.util.Date;
 import java.util.List;
+import java.util.ArrayList;
 
 import lombok.Getter;
 import lombok.Setter;
