@@ -6,7 +6,7 @@ import org.web.sso.common.server.query.QuerySsoToken;
 import org.web.sso.common.server.domain.SsoTokenDO;
 
 @Mapper
-interface SsoTokenDAO {
+public interface SsoTokenDAO {
 
 	SsoTokenDO selectSsoTokenBySsoTokenId(Long ssoTokenId);
 
@@ -17,7 +17,7 @@ interface SsoTokenDAO {
 	int insertSsoToken(SsoTokenDO ssoTokenDO);
 
 	int updateSsoTokenBySsoTokenId(SsoTokenDO ssoTokenDO);
-	
+
 	List<String> selectDistinctList(QuerySsoToken querySsoToken);
 
 }

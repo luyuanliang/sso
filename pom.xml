@@ -15,12 +15,28 @@
     <description>Demo project for Spring Boot</description>
 
     <properties>
+        <sso-version>1.0.0</sso-version>
     </properties>
 
     <modules>
         <module>sso-server</module>
         <module>sso-client</module>
     </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.web.base.common</groupId>
+                <artifactId>sso-server</artifactId>
+                <version>${sso-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.web.base.common</groupId>
+                <artifactId>sso-client</artifactId>
+                <version>${sso-version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <build>
         <plugins>

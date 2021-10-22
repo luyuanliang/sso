@@ -28,7 +28,6 @@ public abstract class SSOAbstractFilter implements Filter, ConstantInterface {
 
     private SSOAbstractFilterConfig config = null;
 
-
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
         HttpServletRequest request = (HttpServletRequest) servletResponse;
@@ -52,7 +51,7 @@ public abstract class SSOAbstractFilter implements Filter, ConstantInterface {
 
         // 第二个场景，token不为空，交换账户信息。
         ResultDO<SessionAccountDO> getSessionByTokenResultDO = getSessionByToken(token, request);
-        if (!getSessionByTokenResultDO.isSuccess()) {
+        if (getSessionByTokenResultDO.isFailed()) {
             // 通过token信息失败，则需要重定向，需要重新登录。
             sendRedirect(response);
         } else {
@@ -70,6 +69,9 @@ public abstract class SSOAbstractFilter implements Filter, ConstantInterface {
 
     abstract ResultDO<SessionAccountDO> getSessionByToken(String token, HttpServletRequest request);
 
+    /**
+     * It's probably for you extends this method.
+     * */
     protected void sendRedirect(HttpServletResponse response) throws IOException {
         response.sendRedirect(config.getRedirectURL());
     }
