@@ -7,10 +7,8 @@
         <artifactId>sso</artifactId>
         <version>1.0.0</version>
     </parent>
-    <groupId>org.web.base.common.sso</groupId>
     <artifactId>sso-server</artifactId>
     <packaging>jar</packaging>
-
     <name>sso-server</name>
     <description>sso-server provider sso service.</description>
 
@@ -23,7 +21,6 @@
         <dependency>
             <groupId>org.web.base.common.sso</groupId>
             <artifactId>sso-client</artifactId>
-            <version>1.0.0</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
         <dependency>
@@ -61,12 +58,6 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.web.base.common.sso</groupId>
-            <artifactId>sso-client</artifactId>
-            <version>1.0.0</version>
-            <scope>compile</scope>
         </dependency>
     </dependencies>
 

@@ -31,7 +31,7 @@
                 <version>${sso-version}</version>
             </dependency>
             <dependency>
-                <groupId>org.web.base.common</groupId>
+                <groupId>org.web.base.common.sso</groupId>
                 <artifactId>sso-client</artifactId>
                 <version>${sso-version}</version>
             </dependency>
