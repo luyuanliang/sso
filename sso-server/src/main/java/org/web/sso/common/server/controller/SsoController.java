@@ -12,7 +12,7 @@ import org.web.base.domain.exception.ResultMessageEnum;
 import org.web.base.domain.exception.ServiceException;
 import org.web.base.domain.helper.ResultHelper;
 import org.web.base.domain.helper.ServiceExceptionHelper;
-import org.web.sso.common.domain.SessionAccountDO;
+import org.web.common.sso.domain.SessionAccountDO;
 import org.web.sso.common.server.domain.SsoTokenDO;
 import org.web.sso.common.server.helper.SSOServerConstant;
 import org.web.sso.common.server.query.QuerySsoToken;

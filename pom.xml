@@ -7,11 +7,11 @@
         <artifactId>base-dependencies</artifactId>
         <version>1.0.0</version>
     </parent>
-    <groupId>org.web.base.common</groupId>
-    <artifactId>sso</artifactId>
+    <groupId>org.web.common.sso</groupId>
+    <artifactId>sso-base</artifactId>
     <version>1.0.0</version>
     <packaging>pom</packaging>
-    <name>sso</name>
+    <name>sso-base</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -19,21 +19,26 @@
     </properties>
 
     <modules>
-        <module>sso-server</module>
         <module>sso-client</module>
+        <module>sso-server</module>
         <module>sso-demo</module>
     </modules>
 
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>org.web.base.common</groupId>
+                <groupId>org.web.common.sso</groupId>
+                <artifactId>sso-client</artifactId>
+                <version>${sso-version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.web.common</groupId>
                 <artifactId>sso-server</artifactId>
                 <version>${sso-version}</version>
             </dependency>
             <dependency>
-                <groupId>org.web.base.common.sso</groupId>
-                <artifactId>sso-client</artifactId>
+                <groupId>org.web.common.sso</groupId>
+                <artifactId>sso-demo</artifactId>
                 <version>${sso-version}</version>
             </dependency>
         </dependencies>
