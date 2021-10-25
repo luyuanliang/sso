@@ -1,4 +1,4 @@
-package org.web.sso.common.server;
+package org.web.common.sso.server;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

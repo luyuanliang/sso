@@ -1,4 +1,4 @@
-package org.web.sso.common.server.query;
+package org.web.common.sso.server.query;
 
 import java.util.Date;
 import java.util.List;

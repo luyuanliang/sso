@@ -1,0 +1,13 @@
+CREATE TABLE `sso_token` (
+  `sso_token_id` int(11) NOT NULL AUTO_INCREMENT COMMENT 'access_token表主键',
+  `sso_token` varchar(255) NOT NULL DEFAULT '' COMMENT 'UUID,产生临时token',
+  `account_num` varchar(11) NOT NULL COMMENT '登录用户ID',
+  `account_name` varchar(11) NOT NULL COMMENT '登录用户名',
+  `expire_time` int(11) NOT NULL DEFAULT 60 COMMENT 'token失效时间，单位秒，最少60秒。',
+  `update_time` datetime NOT NULL COMMENT '记录修改时间',
+  `create_time` datetime NOT NULL COMMENT '记录创建时间',
+  `is_delete` char(255) NOT NULL DEFAULT 'N' COMMENT 'N表示未逻辑删除，Y表示逻辑删除',
+  PRIMARY KEY (`sso_token_id`),
+  UNIQUE KEY `access_token_index` (`sso_token`) USING BTREE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='token信息表，用于跟用户中心交换用户信息，基于tokena交换用户信息。';
+

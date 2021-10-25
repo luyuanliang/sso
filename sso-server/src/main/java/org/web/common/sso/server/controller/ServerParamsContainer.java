@@ -1,7 +1,7 @@
-package org.web.sso.common.server.controller;
+package org.web.common.sso.server.controller;
 
 import org.web.base.helper.PropertiesHelper;
-import org.web.sso.common.server.helper.SSOServerConstant;
+import org.web.common.sso.server.helper.SSOServerConstant;
 
 import java.util.ResourceBundle;
 

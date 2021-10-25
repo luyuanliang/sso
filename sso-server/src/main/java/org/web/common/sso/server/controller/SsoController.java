@@ -1,4 +1,4 @@
-package org.web.sso.common.server.controller;
+package org.web.common.sso.server.controller;
 
 import com.google.gson.Gson;
 import org.apache.commons.lang3.StringUtils;
@@ -13,10 +13,11 @@ import org.web.base.domain.exception.ServiceException;
 import org.web.base.domain.helper.ResultHelper;
 import org.web.base.domain.helper.ServiceExceptionHelper;
 import org.web.common.sso.domain.SessionAccountDO;
-import org.web.sso.common.server.domain.SsoTokenDO;
-import org.web.sso.common.server.helper.SSOServerConstant;
-import org.web.sso.common.server.query.QuerySsoToken;
-import org.web.sso.common.server.service.SsoTokenService;
+import org.web.common.sso.server.domain.SsoTokenDO;
+import org.web.common.sso.server.helper.SSOServerConstant;
+import org.web.common.sso.server.query.QuerySsoToken;
+import org.web.common.sso.server.service.SsoTokenService;
+
 
 import javax.annotation.Resource;
 import java.util.Date;

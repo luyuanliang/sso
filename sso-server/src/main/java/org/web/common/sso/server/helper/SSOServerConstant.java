@@ -1,4 +1,4 @@
-package org.web.sso.common.server.helper;
+package org.web.common.sso.server.helper;
 
 public interface SSOServerConstant {
 

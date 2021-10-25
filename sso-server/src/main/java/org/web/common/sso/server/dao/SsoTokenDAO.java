@@ -1,9 +1,9 @@
-package org.web.sso.common.server.dao;
+package org.web.common.sso.server.dao;
 
 import java.util.List;
 import org.apache.ibatis.annotations.Mapper;
-import org.web.sso.common.server.query.QuerySsoToken;
-import org.web.sso.common.server.domain.SsoTokenDO;
+import org.web.common.sso.server.query.QuerySsoToken;
+import org.web.common.sso.server.domain.SsoTokenDO;
 
 @Mapper
 public interface SsoTokenDAO {
@@ -17,7 +17,7 @@ public interface SsoTokenDAO {
 	int insertSsoToken(SsoTokenDO ssoTokenDO);
 
 	int updateSsoTokenBySsoTokenId(SsoTokenDO ssoTokenDO);
-
+	
 	List<String> selectDistinctList(QuerySsoToken querySsoToken);
 
 }
