@@ -36,7 +36,7 @@
 
     <!-- DAO接口所在包名，Spring会自动查找之中的类 -->
     <bean name="configurer" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="org.web.example.springcloud.dao"/>
+        <property name="basePackage" value="org.web.common.sso.server.dao"/>
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>
     </bean>
 
