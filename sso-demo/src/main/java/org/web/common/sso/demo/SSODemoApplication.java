@@ -11,7 +11,7 @@ import org.web.common.sso.biz.impl.DefaultSSOFilter;
  * SSO demo project 启动类。
  * 引入三方组件功能，要进行手动处理，不要用扫描的方式。
  * */
-@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
+@SpringBootApplication()
 public class SSODemoApplication {
 
     public static void main(String[] args) {

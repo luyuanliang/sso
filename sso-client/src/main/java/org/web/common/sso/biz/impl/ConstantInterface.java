@@ -14,6 +14,7 @@ public interface ConstantInterface {
     String PROPERTIES_USER_NAME = "ORG.WEB.SSO.USERNAME";
     String PROPERTIES_PASSWORD = "ORG.WEB.SSO.PASSWORD";
     String PROPERTIES_REDIRECT_URL = "ORG.WEB.SSO.REDIRECT.URL"; // 重定向URL，可以是三方URL。
+    String PROPERTIES_SSO_URL = "ORG.WEB.SSO.ACCESS_URL";
 
     String DEFAULT_TOKEN_NAME = "ssoToken";
     String DEFAULT_USER_NAME = "ssoUserName";
