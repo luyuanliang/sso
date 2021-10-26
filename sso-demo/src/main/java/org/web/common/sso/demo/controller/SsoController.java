@@ -14,18 +14,9 @@ class HelloDemoController {
      * */
     @RequestMapping(value = "getFirstWorld", method = {RequestMethod.POST, RequestMethod.GET})
     @ResponseBody
-    public String getFirstWorld(String token) {
-        return token;
-    }
-    public static String str = null;
-
-    static {
-        System.out.println("1");
-        str = "112233";
+    public String getFirstWorld(String ssoToken) {
+        return "welcome first sso app.";
     }
 
-    public static void main(String[] args) {
-        System.out.println(str);
-    }
 
 }

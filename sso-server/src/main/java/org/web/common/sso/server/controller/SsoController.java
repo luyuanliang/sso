@@ -2,6 +2,8 @@ package org.web.common.sso.server.controller;
 
 import com.google.gson.Gson;
 import org.apache.commons.lang3.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -29,6 +31,8 @@ import java.util.Map;
 @RequestMapping("sso")
 public class SsoController implements SSOServerConstant {
 
+    Logger logger = LoggerFactory.getLogger(SsoController.ERROR_PARAM_LAST_ACCESS_TIME);
+
     @Resource
     private SsoTokenService ssoTokenService;
 
@@ -54,7 +58,7 @@ public class SsoController implements SSOServerConstant {
                 SsoTokenDO ssoTokenDO = ssoTokenService.selectOneSsoToken(querySsoToken);
                 // 判断是否存在
                 if (ssoTokenDO == null) {
-                    throw ServiceExceptionHelper.buildServiceException(ResultMessageEnum.RECORD_NOT_EXIST, param);
+                    throw ServiceExceptionHelper.buildServiceException(ResultMessageEnum.DATA_NOT_EXIST, param);
                 } else if (new Date().getTime() - ssoTokenDO.getUpdateTime().getTime() > ssoTokenDO.getExpireTime() * 1000) {
                     // 依据时间判断是否失效
                     param.put(ERROR_PARAM_LAST_ACCESS_TIME, ssoTokenDO.getExpireTime());

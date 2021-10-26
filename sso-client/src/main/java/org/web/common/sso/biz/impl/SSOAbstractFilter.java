@@ -51,11 +51,10 @@ public abstract class SSOAbstractFilter implements Filter, ConstantInterface {
 
         // 第二个场景，token不为空，交换账户信息。
         ResultDO<SessionAccountDO> getSessionByTokenResultDO = getSessionByToken(token, request);
-        if (getSessionByTokenResultDO.isFailed()) {
-            // 通过token信息失败，则需要重定向，需要重新登录。
-            sendRedirect(response);
-        } else {
+        if (getSessionByTokenResultDO.isSuccess()) {
             filterChain.doFilter(request, response);
+        } else {
+            sendRedirect(response);
         }
     }
 
