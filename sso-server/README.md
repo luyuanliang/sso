@@ -1,2 +1,2 @@
 # sso
-http://localhost:8082/sso/getSessionDOByToken?token=firsttoken
+http://localhost:8082/ssoServer/sso/getSessionDOByToken?token=firsttoken

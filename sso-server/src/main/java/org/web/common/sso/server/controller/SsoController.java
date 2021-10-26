@@ -31,7 +31,7 @@ import java.util.Map;
 @RequestMapping("sso")
 public class SsoController implements SSOServerConstant {
 
-    Logger logger = LoggerFactory.getLogger(SsoController.ERROR_PARAM_LAST_ACCESS_TIME);
+    Logger logger = LoggerFactory.getLogger(SsoController.class);
 
     @Resource
     private SsoTokenService ssoTokenService;

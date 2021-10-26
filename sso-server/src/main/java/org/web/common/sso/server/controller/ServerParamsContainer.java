@@ -5,6 +5,7 @@ import org.web.common.sso.server.helper.SSOServerConstant;
 
 import java.util.ResourceBundle;
 
+
 public class ServerParamsContainer implements SSOServerConstant {
 
     // 是否有缓存进行提速。
